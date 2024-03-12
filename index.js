@@ -86,13 +86,13 @@ function uploadFiles(req, res) {
       },
     });
 
-    const phoneNumText = phoneNum ? `\n Phone Number : ${phoneNum}` : null;
-    const nameText = name ? `\n name : ${name}` : null;
-    email = email ? `email : ${email}`:null;
-    const messageText = message ? `\n message : ${message}` : null;
-    const pinCodeText = pinCode ? `\n pincode:${pinCode}` : null;
-    const budgetText = budget ? `\n budget:${budget}` : null;
-    const prText = pr ? `\n pr:${pr}` : null;
+    const phoneNumText = phoneNum ? `\n Phone Number : ${phoneNum}` : "";
+    const nameText = name ? `\n name : ${name}` : "";
+    email = email ? `email : ${email}`:"";
+    const messageText = message ? `\n message : ${message}` : "";
+    const pinCodeText = pinCode ? `\n pincode:${pinCode}` : "";
+    const budgetText = budget ? `\n budget:${budget}` : "";
+    const prText = pr ? `\n pr:${pr}` : "";
 
     // Prepare mail details
     let mailDetails = {
